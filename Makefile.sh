@@ -3,4 +3,8 @@
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
-sudo apt-get install ranger
+sudo wget https://github.com/gokcehan/lf/releases/download/r6/lf-linux-amd64.tar.gz \
+-O lf-linux-amd64.tar.gz
+sudo tar xvf lf-linux-amd64.tar.gz
+sudo chmod +x lf
+sudo mv lf /usr/local/bin
