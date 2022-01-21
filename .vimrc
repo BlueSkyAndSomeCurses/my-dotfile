@@ -12,6 +12,7 @@ set undodir=~/.vim/undodir
 set undofile 
 set incsearch
 set wrap
+set wildmenu
 
 call plug#begin('~/.vim/plugged')
 
@@ -19,6 +20,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'gko/vim-coloresque'
 Plug 'dele256/simpleyellow.vim'
+Plug 'kh3phr3n/python-syntax'
 
 call plug#end()
 
