@@ -1,4 +1,5 @@
 syntax on 
+filetype plugin on
 
 set noerrorbells
 set tabstop=4 softtabstop=4 
@@ -12,7 +13,8 @@ set undodir=~/.vim/undodir
 set undofile 
 set incsearch
 set wrap
-set wildmenu
+
+set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
@@ -21,6 +23,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'gko/vim-coloresque'
 Plug 'dele256/simpleyellow.vim'
 Plug 'kh3phr3n/python-syntax'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -36,3 +39,6 @@ let g:lightline = {
 	\ 'colorscheme': "one"
 	\ }
 
+" file finder 
+set path+=**
+set wildmenu
