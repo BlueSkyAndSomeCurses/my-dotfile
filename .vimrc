@@ -4,6 +4,7 @@ filetype plugin on
 set noerrorbells
 set tabstop=4 softtabstop=4 
 set shiftwidth=4
+set noerrorbells
 set nu
 set relativenumber
 set smartcase
@@ -13,6 +14,8 @@ set undodir=~/.vim/undodir
 set undofile 
 set incsearch
 set wrap
+set hidden
+set scrolloff=8
 
 set nocompatible
 
