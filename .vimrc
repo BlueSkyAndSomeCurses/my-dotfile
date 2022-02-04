@@ -24,16 +24,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'gko/vim-coloresque'
-Plug 'dele256/simpleyellow.vim'
+Plug 'joshdick/onedark.vim'
 Plug 'kh3phr3n/python-syntax'
 Plug 'preservim/nerdtree'
 
 call plug#end()
 
 " color scheme
-set background=dark
-set termguicolors
-colorscheme simpleyellow
+set background=light
+colorscheme onedark
 
 " light line config
 set laststatus=2
