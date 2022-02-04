@@ -12,7 +12,7 @@ cp -ri ~/.dotfiles/spaceship-prompt ~/.oh-my-zsh/custom/themes
 cp -ri ~/.dotfiles/spaceship.zsh-theme ~/.oh-my-zsh/custom/themes
 cp -ri ~/.dotfiles/.zshrc ~/.zshrc
 sudo rm ~/.vimrc
-cp -ri ~/.dotfiles/.vimrc ~/.vimrc
+mv -ri ~/.dotfiles/.vimrc ~/.vimrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
 sudo wget https://github.com/gokcehan/lf/releases/download/r6/lf-linux-amd64.tar.gz \
