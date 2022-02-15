@@ -1,5 +1,6 @@
 
 alias rcupdate="source ~/.zshrc"
+alias vim="nvim"
 
 export ZSH=$HOME/.oh-my-zsh
 

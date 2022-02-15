@@ -22,25 +22,27 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 Plug 'jiangmiao/auto-pairs'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'gko/vim-coloresque'
-Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 Plug 'kh3phr3n/python-syntax'
-Plug 'preservim/nerdtree'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
 " color scheme
-set background=light
-colorscheme onedark
+set background=dark
+colorscheme gruvbox
 
-" light line config
-set laststatus=2
-set noshowmode
-let g:lightline = {
-	\ 'colorscheme': "one"
-	\ }
+"airline confing
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
 
 " file finder 
 set path+=**
 set wildmenu
+
