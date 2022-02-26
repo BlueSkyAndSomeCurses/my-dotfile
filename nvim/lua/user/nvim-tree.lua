@@ -90,3 +90,5 @@ nvim_tree.setup {
     tree_width = 30,
   },
 }
+
+vim.cmd "nnoremap <C-l> <cmd> NvimTreeOpen<cr>"

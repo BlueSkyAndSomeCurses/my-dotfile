@@ -94,3 +94,5 @@ telescope.setup {
     -- please take a look at the readme of the extension you want to configure
   },
 }
+
+vim.cmd "nnoremap <C-p> <cmd>Telescope find_files<cr>"
