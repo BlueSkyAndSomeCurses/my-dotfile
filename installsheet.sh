@@ -4,11 +4,9 @@ sudo apt install tmux
 sudo apt-get install build-essential
 sudo apt-get install libevent-dev libncurses5-dev
 
-sudo apt install neovim
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt-get update
-sudo apt-get install neovim
+sudo apt-get install python3
+sudo apt-get install pip
+sudo apt-get install pip3
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
@@ -25,6 +23,4 @@ sudo tar xvf lf-linux-amd64.tar.gz
 sudo chmod +x lf
 sudo mv lf /usr/local/bin
 
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-$ sudo apt-get install ripgrep
+sudo apt-get install ripgrep
