@@ -13,14 +13,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
-mkdir ~/.config/nvim
-cp -ri ~/.dotfiles/init.vim ~/.config/nvim
-cp -ri ~/.dotfiles/.zshrc ~/.zshrc
+mv .zshrc ~
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
-sudo wget https://github.com/gokcehan/lf/releases/download/r6/lf-linux-amd64.tar.gz \
--O lf-linux-amd64.tar.gz
-sudo tar xvf lf-linux-amd64.tar.gz
-sudo chmod +x lf
-sudo mv lf /usr/local/bin
-
+mkdir ~/.config
+mv nvim ~/.config
 sudo apt-get install ripgrep
+
+mkdir ~/.config/alacritty/
+mv alacritty.yml ~/.config/alacritty

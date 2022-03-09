@@ -18,4 +18,4 @@ require "user.alpha"
 require "user.autocommands"
 require "user.nvim-web-devicons"
 
-vim.cmd "colorscheme nord"
+vim.cmd "colorscheme gruvbox"
