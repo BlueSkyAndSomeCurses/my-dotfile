@@ -1,7 +1,7 @@
 local config = {
 
   -- Set colorscheme
-  colorscheme = "gruvbox-material",
+  colorscheme = "kanagawa",
 
   -- Default theme configuration
   default_theme = {

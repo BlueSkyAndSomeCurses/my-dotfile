@@ -369,6 +369,9 @@ local astro_plugins = {
   {
     "jaredgorski/SpaceCamp"
   },
+  {
+    "rebelot/kanagawa.nvim"
+  },
 }
 
 packer.startup {
